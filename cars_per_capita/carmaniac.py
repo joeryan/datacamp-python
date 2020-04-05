@@ -35,3 +35,10 @@ for index, value in enumerate(many_cars):
 
 print("car maniacs the hard way:")
 print(car_high_use)
+
+# pandas using series filter 
+# see corey schafer video: https://www.youtube.com/watch?v=Lw2rlcxScZY&list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS&index=4
+filtr = (cars['cars_per_cap'] > 500)  # parenthesis just make it clear assignment is after compare
+cars_corey = cars[filtr]
+print("car maniacs the corey filter way:")
+print(cars_corey)
